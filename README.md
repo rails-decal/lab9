@@ -1,6 +1,8 @@
 Lecture/Lab 9: Authentication
 =====
 
+Solution: https://github.com/rails-decal/lab9/pull/17/files
+
 The app from last week is functional but has huge security issues! Let's fix
 them in our extended lab for this week.
 
@@ -10,16 +12,19 @@ request, and having your partner merge it in before starting on the next
 question.
 
 Designate one person as person A, and the other as person B.
-Have person A fork this repo on Github, go to Settings -> Collaborators, and add
+Follow these steps as person A:
+- Make a new empty repo called `lab9` on github
+- `git clone (this railsdecal repo)`
+- `git remote rm origin`
+- `git remote add origin https://github.com/<your username/lab9`
+- `git push origin master`
+
+Then on Github go to Settings -> Collaborators, and add
 person B to the repo.
 
-Person A:
+Now partner B should run
 
-Person B:
-
-Now both partners should run
-
-    git clone https://github.com/<your username>/lab9
+    git clone https://github.com/<partner A username>/lab9
 
 to start working on the app. There is a written portion of this lab, so write
 down your answers in ```lab9.txt``` and [submit them through the form](https://docs.google.com/forms/d/1wP6s8MEMzYgTYUKYeBcABGCi664EwrNLq763nCogTSg/viewform)!
@@ -57,7 +62,7 @@ in ```/sign_in``` using ```rake routes``` and visiting it in your browser.
     Add two ```<li>``` elements below the existing link to 'Users' in
     ```application.html.erb``` that link to the sign in/out paths depending on
     if the user is signed in (only one of those li elements will be visible at
-    any time to the user). You should add 5-6 lines of extra codes.
+    any time to the user). You should add 5-6 lines of extra code.
 
 3. _(Person B codes)_ So now we have logging in and out. Now we want to make
 sure that if a user is not signed in that we only allow them to view the sign in
@@ -173,4 +178,4 @@ You can now do something like ```User.first.admin?```, which returns true or
 false. Then make the necessary changes so that users who are admins can create
 and edit quits of all users.
 
-You made it!
+You made it! Submit the written portion of the lab [here](https://docs.google.com/forms/d/1wP6s8MEMzYgTYUKYeBcABGCi664EwrNLq763nCogTSg/viewform).
