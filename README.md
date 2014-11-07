@@ -1,6 +1,8 @@
 Lecture/Lab 9: Authentication
 =====
 
+Solution: https://github.com/rails-decal/lab9/pull/17/files
+
 The app from last week is functional but has huge security issues! Let's fix
 them in our extended lab for this week.
 
