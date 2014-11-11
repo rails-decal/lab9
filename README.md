@@ -1,4 +1,4 @@
-Lecture/Lab 9: Authentication
+Lecture/Lab 9: Authorization
 =====
 
 Solution: https://github.com/rails-decal/lab9/pull/17/files
